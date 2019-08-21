@@ -13,9 +13,9 @@ const TodosFooter = ({ showActive, showCompleted, showAll, numberOfUnCompleted }
         <div className="todos_footer">
             <p>{numberOfUnCompleted} item left</p>
             <div className="todos_filter">
-                <Button name="All" action={showAll} filter="SHOW_ALL"/>
-                <Button name="Active" action={showActive} filter="SHOW_ACTIVE"/>
-                <Button name="Completed" action={showCompleted} filter="SHOW_COMPLETED"/>
+                <Button name="All" action={showAll} filterName="SHOW_ALL"/>
+                <Button name="Active" action={showActive} filterName="SHOW_ACTIVE"/>
+                <Button name="Completed" action={showCompleted} filterName="SHOW_COMPLETED"/>
             </div>
         </div>
     )

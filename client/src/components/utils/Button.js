@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import './Button.scss'
 
 const Button = ({name,action,filterName,filter}) => {
+    console.log(filter,filterName)
     return (
         <button 
             onClick={action} 
