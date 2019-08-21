@@ -1,0 +1,45 @@
+.todos_item {
+	min-height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	.todos_item--checkbox {
+		width: 28px;
+		height: 30px;
+		margin: 0 5px;
+		background-color: #fff;
+	}
+	.todos_item--container {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		.todos_item--input {
+			flex: 1;
+			min-height: 50px;
+			font-size: 1.4rem;
+			outline: 0;
+			border: 0;
+		}
+		.todos_item--label {
+			flex: 1;
+			height: auto;
+			font-size: 1.4rem;
+			word-break: break-all;
+			user-select: none;
+		}
+		.todos_item--delete {
+			padding: 10px;
+			margin: 0 5px;
+			background-color: #fff;
+			border: 0;
+			font-size: 1.4rem;
+			span {
+				font-size: 1.1rem;
+			}
+			&:focus {
+				outline: 0;
+			}
+		}
+	}
+}
