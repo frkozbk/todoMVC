@@ -14,6 +14,7 @@ export const fetchTodos = () => async (dispatch) => {
 export const addTodo = (content) =>async (dispatch) => {
     try {
         const response = await instance.post('api/todo/createTodo',{content})
+        
         dispatch({
             type: 'ADD_TODO',
             payload: response.data.todo
