@@ -4,7 +4,7 @@
 .pnp.js
 # testing
 /coverage
-
+/keys.js
 # production
 /build
 

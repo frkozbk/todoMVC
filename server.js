@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 const db = keys.mongoURI;
 
 mongoose
-  .connect(db, { useNewUrlParser: true })
+  .connect(process.env.MONGO_URI, { useNewUrlParser: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
