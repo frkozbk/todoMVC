@@ -8,7 +8,5 @@ const middlewares= [thunk]
 
 
 
-export default createStore(rootReducer,{},compose(
-    applyMiddleware(...middlewares),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-) )
+export default createStore(rootReducer, {}, applyMiddleware(...middlewares)
+)
