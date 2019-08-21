@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
 const todo = require('./routes/api/todo');
-const keys = require('./keys');
+const keys = require('./keys.js');
 
 const app = express();
 app.use(cors());
