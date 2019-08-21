@@ -8,8 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-const db =
-  'mongodb+srv://faruk:frkozbk123@cluster0-ie39t.mongodb.net/test?retryWrites=true&w=majority';
+const db = process.env.MONDO_URI;
 
 mongoose
   .connect(db, { useNewUrlParser: true })
